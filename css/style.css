@@ -1,0 +1,318 @@
+:root{
+    --concept-color: rgb(0, 255, 255);
+    --text-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    padding-left: 0;
+}
+
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.pop{  
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+@media only screen and (max-width: 768px) {
+    .flex{
+        flex-direction: column;
+    }
+}
+
+body{
+    background-color: black;
+}
+
+/*ヘッダ*/
+header{
+    padding: 27px 0;
+}
+.logo{ /*クラスを指定するときは.*/
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+.logo span{
+    color: var(--concept-color);
+}
+.header_menu li{
+    margin-left: 40px;
+}
+.header_menu li a{
+    color: gray;
+    transition: .3s;
+}
+.header_menu li a:hover{
+    color: var(--text-color);
+    transition: .3s;
+}
+
+@media only screen and (max-width: 768px) {
+    header .container{
+        justify-content: center;
+    }
+    .header_menu li{
+        margin: 20px 16px 0;
+    }
+}
+
+/*メイン*/
+#hero{ /* idを指定するときは＃ */
+    background-image: url(../images/hero.png);
+    background-position: center;
+    background-size: cover;
+    height: 540px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    overflow: hidden;
+}
+#hero::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.3;
+    z-index: 1;
+}
+.hero_inner{
+    z-index: 2;
+    color: var(--text-color);
+    width: 100%;
+    text-align: center;
+}
+.hero_inner p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.hero_inner h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    #hero{
+        height: 460px;
+    }
+    .hero_inner p {
+        font-size: 15px;
+    }
+    .hero_inner h1 {
+        font-size: 17px;
+    }
+}
+
+/* About */
+#about{
+    margin-bottom: 120px;
+    color: var(--text-color);
+}
+.title{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--concept-color);
+    margin-bottom: 10px;
+}
+#about h3{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.column-2{
+    width: 48%;
+}
+.text{
+    line-height: 2;
+}
+.about-img{
+    background-image: url(../images/hero.png);
+    background-position: center;
+    background-size: cover;
+    height: 340px;
+    border-radius: 20px;
+}
+.heading{
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    font-weight: 700;
+    color: var(--concept-color);
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-30%);
+    z-index: -1;
+}
+.heading_left{
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    font-weight: 700;
+    color: var(--concept-color);
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-30%);
+    z-index: -1;
+}
+
+@media only screen and (max-width: 768px){
+    #about h3{
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    .column-2{
+        width: 100%;
+    }
+    .text{
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    .about-img{
+        margin-top: 30px;
+    }
+    .heading{
+        font-size: 80px;
+    }
+    .heading_left{
+        font-size: 80px;
+    }
+}
+
+/* Worlds */
+#worlds{
+    margin-bottom: 120px;
+    color: var(--text-color);
+}
+.caution{
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 40px;
+    color: red;
+}
+.worlds_inner{
+    margin-bottom: 40px;
+    position: relative;
+}
+.column-40{
+    width: 40%;
+}
+.column-55{
+    width: 55%;
+}
+#worlds img{
+    border-radius: 30px;
+}
+#worlds h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 768px){
+    .column-40{
+        width: 100%;
+    }
+    .column-55{
+        width: 100%;
+    }
+    #worlds img{
+        margin-top: 40px;
+    }
+    #worlds h3{
+        font-size: 17px;
+    }
+    .order1{
+        order: 1;
+    }
+    .order2{
+        order: 2;
+    }
+    .order3{
+        order: 3;
+    }
+    .order4{
+        order: 4;
+    }
+    .order5{
+        order: 5;
+    }
+    .order6{
+        order: 6;
+    }
+    .order7{
+        order: 7;
+    }
+    .order8{
+        order: 8;
+    }
+    .order9{
+        order: 9;
+    }
+    .order10{
+        order: 10;
+    }
+}
+
+/* Contact */
+#contact{
+    margin-bottom: 120px;
+    color: var(--text-color);
+}
+#contact dl{
+    max-width: 900px;
+    margin-left: auto;
+}
+#contact dt{
+    width: 30%;
+    padding: 20px 0;
+    font-weight: 500;
+    border-bottom: solid 1px var(--concept-color);
+}
+#contact dd{
+    width: 65%;
+    padding: 20px 0;
+    border-bottom: solid 1px var(--concept-color);
+}
+
+@media only screen and (max-width: 768px){
+    #contact dl{
+        font-size: 13px;
+    }
+    #contact dd{
+        width: 55%;
+    }
+}
+/* footer */
+footer{
+    text-align: center;
+    margin: 90px 0;
+}
