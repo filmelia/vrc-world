@@ -44,7 +44,7 @@ html{
 }
 
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 16);
 }
 
 /*ヘッダ*/
@@ -147,16 +147,19 @@ header{
     margin-bottom: 60px;
 }
 .column-2{
-    width: 48%;
+    width: 52%;
+}
+.column-3{
+    width: 42%;
 }
 .text{
     line-height: 2;
 }
 .about-img{
-    background-image: url(../images/hero.png);
+    background-image: url(../images/Riddle.png);
     background-position: center;
     background-size: cover;
-    height: 340px;
+    height: 360px;
     border-radius: 20px;
 }
 .heading{
@@ -164,7 +167,7 @@ header{
     font-size: 100px;
     font-weight: 700;
     color: var(--concept-color);
-    opacity: 0.2;
+    opacity: 0.4;
     position: absolute;
     top: 0;
     right: 0;
@@ -176,7 +179,7 @@ header{
     font-size: 100px;
     font-weight: 700;
     color: var(--concept-color);
-    opacity: 0.2;
+    opacity: 0.4;
     position: absolute;
     top: 0;
     left: 0;
@@ -236,6 +239,17 @@ header{
     font-weight: 700;
     margin-bottom: 24px;
 }
+.detail{
+    text-align: right;
+}
+.worlds_inner .detail a{
+    color: gray;
+    transition: .3s;
+}
+.worlds_inner .detail a:hover{
+    color: var(--text-color);
+    transition: .3s;
+}
 
 @media only screen and (max-width: 768px){
     .column-40{
@@ -279,6 +293,24 @@ header{
     }
     .order10{
         order: 10;
+    }
+    .order11{
+        order: 11;
+    }
+    .order12{
+        order: 12;
+    }
+    .order13{
+        order: 13;
+    }
+    .order14{
+        order: 14;
+    }
+    .order15{
+        order: 15;
+    }
+    .order16{
+        order: 16;
     }
 }
 
