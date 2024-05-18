@@ -139,7 +139,7 @@ header{
 .title{
     font-size: 25px;
     font-weight: 500;
-    color: var(--concept-color);
+    color: var(--sub-color);
     margin-bottom: 10px;
 }
 #about h3{
