@@ -170,3 +170,9 @@ header{
     .order19{order: 19;}
     .order20{order: 20;}
 }
+
+/* footer */
+footer{
+    text-align: center;
+    margin: 90px 0;
+}
