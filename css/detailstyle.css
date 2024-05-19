@@ -108,6 +108,14 @@ header{
     font-weight: 500;
     margin-bottom: 16px;
 }
+@media only screen and (max-width: 768px) {
+    #keyvisual{
+        height: 460px;
+    }
+    .key_inner p {
+        font-size: 20px;
+    }
+}
 
 /*詳細*/
 .title{
