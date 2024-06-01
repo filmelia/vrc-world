@@ -86,11 +86,22 @@ header{
 }
 
 /*キービジュアル*/
-#keyvisual{
+#keyvisualGP{
     background-image: url(../images/GravityPuzzle.png);
     background-position: center;
     background-size: cover;
     height: 540px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    overflow: hidden;
+}
+#keyvisualOFL{
+    background-image: url(../images/OFL.png);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -109,7 +120,7 @@ header{
     margin-bottom: 16px;
 }
 @media only screen and (max-width: 768px) {
-    #keyvisual{
+    #keyvisualGP{
         height: 460px;
     }
     .key_inner p {
@@ -127,8 +138,14 @@ header{
 .width40{
     width: 40%;
 }
+.width55{
+    width: 55%;
+}
 @media only screen and (max-width: 1100px){
     #detail .width40{
+        width: 100%;
+    }
+    #detail .width55{
         width: 100%;
     }
 }
@@ -177,6 +194,17 @@ header{
     .order18{order: 18;}
     .order19{order: 19;}
     .order20{order: 20;}
+}
+@media only screen and (max-width: 768px){
+    #story .width40{
+        width: 100%;
+    }
+    #story .width45{
+        width: 100%;
+    }
+    #story .width55{
+        width: 100%;
+    }
 }
 
 /* footer */
