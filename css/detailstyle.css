@@ -108,6 +108,17 @@ header{
     margin-bottom: 90px;
     overflow: hidden;
 }
+#keyvisualMLLFY{
+    background-image: url(../images/MLLFY.png);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    overflow: hidden;
+}
 .key_inner{
     z-index: 2;
     color: var(--text-color);
